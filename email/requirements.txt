@@ -1,0 +1,7 @@
+flask
+Flask-SQLAlchemy
+celery
+redis
+postgres
+psycopg2-binary
+sendgrid
