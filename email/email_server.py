@@ -30,7 +30,7 @@ def execute():
         cmd = data["command"]
         msg = data["message"]
 
-        from_email = "ankita_budhraja@berkeley.edu"
+        from_email = "***"
         email =  msg.split()[0]
         subject = msg.split()[1]
         body = ' '.join(msg.split()[2:])

@@ -24,7 +24,7 @@ services:
     environment:
       - CELERY_BROKER_URL=redis://redis_container:6379/0
       - CELERY_RESULT_BACKEND=db+postgresql://postgres:postgres@postgres_container:5432/chatbot
-      - SENDGRID_API_KEY=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
+      - SENDGRID_API_KEY=***
     volumes:
       - ./worker/worker.py:/app/worker.py
 
@@ -47,7 +47,7 @@ services:
     ports:
       - 5052:5052
     environment:
-      - SENDGRID_API_KEY=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
+      - SENDGRID_API_KEY=***
       - CELERY_BROKER_URL=redis://redis_container:6379/0
       - CELERY_RESULT_BACKEND=db+postgresql://postgres:postgres@postgres_container:5432/chatbot
     depends_on:
